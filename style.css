@@ -48,3 +48,43 @@ table{
   border-color: green;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: gold;
+  }
+}
